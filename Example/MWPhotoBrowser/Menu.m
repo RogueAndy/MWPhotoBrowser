@@ -21,7 +21,6 @@
 		self.title = @"MWPhotoBrowser";
         
         // Clear cache for testing
-        [[SDImageCache sharedImageCache] clearDisk];
         [[SDImageCache sharedImageCache] clearMemory];
         
         _segmentedControl = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"Push", @"Modal", nil]];
@@ -263,17 +262,26 @@
         }
 		case 5:
             // Photos
-			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3567/3523321514_371d9ac42f_b.jpg"]]];
-			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3629/3339128908_7aecabc34b_b.jpg"]]];
-			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3364/3338617424_7ff836d55f_b.jpg"]]];
-			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b_b.jpg"]]];
-			[photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm3.static.flickr.com/2449/4052876281_6e068ac860_b.jpg"]]];
-            // Thumbs
-			[thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3567/3523321514_371d9ac42f_q.jpg"]]];
-			[thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3629/3339128908_7aecabc34b_q.jpg"]]];
-			[thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3364/3338617424_7ff836d55f_q.jpg"]]];
-			[thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b_q.jpg"]]];
-			[thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm3.static.flickr.com/2449/4052876281_6e068ac860_q.jpg"]]];
+            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://192.168.6.136:8084/images/app_1/cms/201802/0ce0ad2e73984486bb496d508ef2e902.gif"]]];
+            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://192.168.6.136:8084/images/app_1/cms/201802/9d70519ab5dc44d6b61030905cd80f87.gif"]]];
+            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://192.168.6.136:8084/images/app_1/cms/201802/0c9efcf1f63640769546a6274239f8f1.jpg"]]];
+            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://192.168.6.136:8084/images/app_1/cms/201802/61f2d54679ea4537aa913c3bfc5d3752.jpg"]]];
+            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://192.168.6.136:8084/images/app_1/cms/201802/75e99b670676452a8056d52fd217adaa.jpg"]]];
+            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://192.168.6.136:8084/images/app_1/cms/201802/854092101be7417293ca8b59a4631f54.jpg"]]];
+            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://images.cqliving.com/images//app_1/cms/201802/6b0c598f2e0a49b8b55197c24346faeb.jpg"]]];
+            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://images.cqliving.com/images//app_1/cms/201802/bc71fbd6c4d6449195d8aa85f937a264.jpg"]]];
+            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://images.cqliving.com/images//app_1/cms/201802/8ef27cc67e98400ca04bd491603bd2b5.jpg"]]];
+//            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3567/3523321514_371d9ac42f_b.jpg"]]];
+//            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3629/3339128908_7aecabc34b_b.jpg"]]];
+//            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3364/3338617424_7ff836d55f_b.jpg"]]];
+//            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b_b.jpg"]]];
+//            [photos addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm3.static.flickr.com/2449/4052876281_6e068ac860_b.jpg"]]];
+//            // Thumbs
+//            [thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3567/3523321514_371d9ac42f_q.jpg"]]];
+//            [thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3629/3339128908_7aecabc34b_q.jpg"]]];
+//            [thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3364/3338617424_7ff836d55f_q.jpg"]]];
+//            [thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm4.static.flickr.com/3590/3329114220_5fbc5bc92b_q.jpg"]]];
+//            [thumbs addObject:[MWPhoto photoWithURL:[NSURL URLWithString:@"http://farm3.static.flickr.com/2449/4052876281_6e068ac860_q.jpg"]]];
             // Options
 			break;
 		case 6:

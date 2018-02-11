@@ -31,3 +31,7 @@ Carthage
 # `pod install` in .travis.yml
 #
 # Pods/
+
+Example/MWPhotoBrowser.xcworkspace
+Example/Podfile.lock
+Example/Pods
